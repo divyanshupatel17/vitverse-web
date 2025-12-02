@@ -10,10 +10,10 @@ const Contact = () => {
   ]
 
   return (
-    <section className="contact" id="contact">
+    <section className="contact section" id="contact">
       <div className="contact-container">
         <h2>Get in Touch</h2>
-        <div className="contact-grid">
+        {/* <div className="contact-grid">
           {contacts.map((contact, idx) => (
             <a key={idx} href={contact.link} className="contact-card">
               <img src={contact.icon} alt={contact.title} className="contact-icon" />
@@ -21,7 +21,7 @@ const Contact = () => {
             </a>
           ))}
         </div>
-        
+         */}
         <div className="collaboration">
           <h3>Credits & Collaborations</h3>
           <p>In collaboration with <strong>Unmessify</strong> - an app that aims to make the hostel mess… less of a mess.</p>

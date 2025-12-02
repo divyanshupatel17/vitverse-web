@@ -26,7 +26,6 @@ function App() {
       <Downloads />
       <Features />
       <Contact />
-      {/* <Legal /> */}
       <Footer />
     </div>
   )

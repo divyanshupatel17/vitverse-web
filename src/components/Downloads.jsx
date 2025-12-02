@@ -32,7 +32,7 @@ const Downloads = () => {
   }
 
   return (
-    <section className="downloads" id="download">
+    <section className="downloads section" id="download">
       <div className="downloads-container">
         <h2>Download VITVerse for Android</h2>
         

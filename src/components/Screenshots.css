@@ -1,7 +1,7 @@
 .screenshots {
   max-width: 1200px;
-  margin: 32px auto;
-  padding: 0 24px;
+  margin: 0 auto;
+  padding-top: 30px;
 }
 
 .screenshots-container {
@@ -11,12 +11,11 @@
 .screenshots-scroll {
   display: flex;
   gap: 16px;
-  padding-bottom: 16px;
 }
 
 .screenshot-item {
   flex-shrink: 0;
-  width: 200px;
+  width: 220px;
 }
 
 .screenshot-image {

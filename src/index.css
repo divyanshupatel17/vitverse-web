@@ -63,3 +63,9 @@ a {
 ::-webkit-scrollbar {
   width: 0px;
 }
+
+.section{
+  max-width: 1200px;
+  margin: 10px 30px;
+  padding-top: 30px;
+}

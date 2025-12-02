@@ -40,7 +40,7 @@ const Screenshots = () => {
   }));
 
   return (
-    <section className="screenshots">
+    <section className="screenshots section">
       <div className="screenshots-container">
         <div className="screenshots-scroll">
           {screenshots.map((screenshot) => (
