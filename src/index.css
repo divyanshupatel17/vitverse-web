@@ -66,6 +66,16 @@ a {
 
 .section{
   max-width: 1200px;
-  margin: 10px 30px;
+
+  /* margin: 10px 30px; */
+
+  margin: 10px auto;
   padding-top: 30px;
 }
+
+
+@media (max-width: 768px) {
+      .section{
+        margin: 10px 30px;
+      }
+    }
