@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-disclaimer">
-          <p>Built with ❤️ just for entertainment purposes... no deep VIT missions here 😎</p>
+          <p>Built with ❤️ just for entertainment purposes... no deep VIT missions here</p>
           <p>Not affiliated with VIT Chennai. Developed independently by a VIT Chennai student.</p>
         </div>
         <div className="footer-links">
