@@ -1,0 +1,116 @@
+{
+   "versions":[
+      {
+         "version":"1.1.0",
+         "releaseDate":"2025-11-15",
+         "isLatest":true,
+         "description":"CRITICAL FIX !!!!!!",
+         "releaseNotes":[
+            "[CRITICAL]: Fixed timetable parsing issue",
+            "[FEATURE]: Integrated EventHub VITC (find OD events easily)",
+            "General bug fixes and performance optimizations"
+         ],
+         "apks":[
+            {
+               "architecture":"ARM64-v8a",
+               "recommended":true,
+               "description":"For most modern Android devices (2019+)",
+               "fileName":"VITverse-v1.1.0-app-arm64-v8a-release.apk",
+               "size":"≈31 MB",
+               "downloadUrl":"https://github.com/divyanshupatel17/vit-connect/releases/download/v1.1.0/VITverse-v1.1.0-app-arm64-v8a-release.apk"
+            },
+            {
+               "architecture":"ARMeabi-v7a",
+               "recommended":false,
+               "description":"For older Android devices (2015-2019)",
+               "fileName":"VITverse-v1.1.0-app-armeabi-v7a-release.apk",
+               "size":"≈28 MB",
+               "downloadUrl":"https://github.com/divyanshupatel17/vit-connect/releases/download/v1.1.0/VITverse-v1.1.0-app-armeabi-v7a-release.apk"
+            },
+            {
+               "architecture":"Universal APK",
+               "recommended":false,
+               "description":"Works on all devices (larger file size)",
+               "fileName":"VITverse-v1.1.0-app-release.apk",
+               "size":"≈53 MB",
+               "downloadUrl":"https://github.com/divyanshupatel17/vit-connect/releases/download/v1.1.0/VITverse-v1.1.0-app-release.apk"
+            }
+         ]
+      },
+      {
+         "version":"1.0.1",
+         "releaseDate":"2025-11-12",
+         "isLatest":false,
+         "description":"Critical fixes & improvements",
+         "releaseNotes":[
+            "[FIX]: Resolved authentication freeze issue",
+            "[FIX]: Removed Google ML Kit (crashes & heavy size)",
+            "[FIX]: Improved memory usage and app performance",
+            "[FIX]: Theme persistence issue on restart resolved",
+            "[FIX]: Accurate CGPA/GPA calculator with correct projections",
+            "General bug fixes and optimizations"
+         ],
+         "apks":[
+            {
+               "architecture":"ARM64-v8a",
+               "recommended":true,
+               "description":"For most modern Android devices (2019+)",
+               "fileName":"VITverse-v1.0.1-app-arm64-v8a-release.apk",
+               "size":"≈31 MB",
+               "downloadUrl":"https://github.com/divyanshupatel17/vit-connect/releases/download/v1.0.1/VITverse-v1.0.1-app-arm64-v8a-release.apk"
+            },
+            {
+               "architecture":"ARMeabi-v7a",
+               "recommended":false,
+               "description":"For older Android devices (2015-2019)",
+               "fileName":"VITverse-v1.0.1-app-armeabi-v7a-release.apk",
+               "size":"≈28 MB",
+               "downloadUrl":"https://github.com/divyanshupatel17/vit-connect/releases/download/v1.0.1/VITverse-v1.0.1-app-armeabi-v7a-release.apk"
+            },
+            {
+               "architecture":"Universal APK",
+               "recommended":false,
+               "description":"Works on all devices (larger file size)",
+               "fileName":"VITverse-v1.0.1-app-release.apk",
+               "size":"≈53 MB",
+               "downloadUrl":"https://github.com/divyanshupatel17/vit-connect/releases/download/v1.0.1/VITverse-v1.0.1-app-release.apk"
+            }
+         ]
+      },
+      {
+         "version":"1.0.0",
+         "releaseDate":"2024-11-8",
+         "isLatest":false,
+         "description":"Initial stable release",
+         "releaseNotes":[
+            "[INIT]: First official release of VITverse"
+         ],
+         "apks":[
+            {
+               "architecture":"ARM64-v8a",
+               "recommended":true,
+               "description":"For most modern Android devices (2019+)",
+               "fileName":"VITverse-v1.0.0-app-arm64-v8a-release.apk",
+               "size":"≈43 MB",
+               "downloadUrl":"https://github.com/divyanshupatel17/vit-connect/releases/download/v1.0.0/VITverse-v1.0.0-app-arm64-v8a-release.apk"
+            },
+            {
+               "architecture":"ARMeabi-v7a",
+               "recommended":false,
+               "description":"For older Android devices (2015-2019)",
+               "fileName":"VITverse-v1.0.0-app-armeabi-v7a-release.apk",
+               "size":"≈35 MB",
+               "downloadUrl":"https://github.com/divyanshupatel17/vit-connect/releases/download/v1.0.0/VITverse-v1.0.0-app-armeabi-v7a-release.apk"
+            },
+            {
+               "architecture":"Universal APK",
+               "recommended":false,
+               "description":"Works on all devices (larger file size)",
+               "fileName":"VITverse-v1.0.0-app-release.apk",
+               "size":"≈128 MB",
+               "downloadUrl":"https://github.com/divyanshupatel17/vit-connect/releases/download/v1.0.0/VITverse-v1.0.0-app-release.apk"
+            }
+         ]
+      }
+   ]
+}

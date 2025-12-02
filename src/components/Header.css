@@ -1,16 +1,17 @@
 .header {
-  background: var(--bg-primary);
+  background: var(--play-store-header);
   border-bottom: 1px solid var(--border-color);
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 1px 2px var(--card-shadow);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0;
 }
 
 .header-content {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 12px 24px;
+  padding: 8px 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,7 +20,7 @@
 .logo-section {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
 }
 
 .app-logo {
@@ -27,46 +28,36 @@
   height: 32px;
   border-radius: 8px;
   object-fit: cover;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .logo-text {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
   color: var(--text-primary);
+  letter-spacing: -0.3px;
 }
 
 .nav {
   display: flex;
-  gap: 24px;
+  gap: 28px;
   align-items: center;
 }
 
 .nav a {
   color: var(--text-secondary);
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   transition: color 0.2s;
+  text-decoration: none;
 }
 
 .nav a:hover {
   color: var(--accent-primary);
+  text-decoration: underline;
 }
 
-.theme-toggle {
-  background: var(--bg-secondary);
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  transition: background 0.2s;
-}
 
-.theme-toggle:hover {
-  background: var(--bg-tertiary);
-}
 
 @media (max-width: 768px) {
   .nav a {

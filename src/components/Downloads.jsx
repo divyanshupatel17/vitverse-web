@@ -1,44 +1,31 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Downloads.css'
 
 const Downloads = () => {
   const [expandedVersion, setExpandedVersion] = useState(0)
+  const [versions, setVersions] = useState([])
 
-  const versions = [
-    {
-      version: 'v1.2.0',
-      date: 'Dec 2, 2024',
-      isCurrent: true,
-      notes: ['[CRITICAL]: Fixed timetable parsing issue', '[FEATURE]: Integrated EventHub VITC', 'General bug fixes and performance optimizations'],
-      downloads: [
-        { arch: 'ARM64-v8a', size: '31 MB', desc: 'For most modern Android devices (2019+)', link: '#' },
-        { arch: 'ARMeabi-v7a', size: '28 MB', desc: 'For older Android devices (2015-2019)', link: '#' },
-        { arch: 'Universal APK', size: '53 MB', desc: 'Works on all devices (larger file size)', link: '#' }
-      ]
-    },
-    {
-      version: 'v1.1.0',
-      date: 'Nov 15, 2024',
-      isCurrent: false,
-      notes: ['[FIX]: Resolved authentication freeze', '[FIX]: Improved memory usage', '[FIX]: Theme persistence issue', '[FIX]: Accurate CGPA/GPA calculator'],
-      downloads: [
-        { arch: 'ARM64-v8a', size: '31 MB', desc: 'For most modern Android devices (2019+)', link: '#' },
-        { arch: 'ARMeabi-v7a', size: '28 MB', desc: 'For older Android devices (2015-2019)', link: '#' },
-        { arch: 'Universal APK', size: '53 MB', desc: 'Works on all devices', link: '#' }
-      ]
-    },
-    {
-      version: 'v1.0.0',
-      date: 'Oct 1, 2024',
-      isCurrent: false,
-      notes: ['[INIT]: First official release of VITVerse'],
-      downloads: [
-        { arch: 'ARM64-v8a', size: '43 MB', desc: 'For most modern Android devices (2019+)', link: '#' },
-        { arch: 'ARMeabi-v7a', size: '35 MB', desc: 'For older Android devices (2015-2019)', link: '#' },
-        { arch: 'Universal APK', size: '128 MB', desc: 'Works on all devices', link: '#' }
-      ]
-    }
-  ]
+  useEffect(() => {
+    fetch('/versions.json')
+      .then(response => response.json())
+      .then(data => {
+        const formattedVersions = data.versions.map((version, index) => ({
+          version: `v${version.version}`,
+          date: new Date(version.releaseDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }),
+          isCurrent: version.isLatest,
+          notes: version.releaseNotes,
+          downloads: version.apks.map(apk => ({
+            arch: apk.architecture,
+            size: apk.size.replace('≈', ''),
+            desc: apk.description,
+            link: apk.downloadUrl,
+            recommended: apk.recommended
+          }))
+        }));
+        setVersions(formattedVersions);
+      })
+      .catch(error => console.error('Error fetching versions:', error));
+  }, []);
 
   const toggleVersion = (idx) => {
     setExpandedVersion(expandedVersion === idx ? -1 : idx)
@@ -81,7 +68,7 @@ const Downloads = () => {
                       {version.downloads.map((dl, i) => (
                         <div key={i} className="download-card">
                           <div className="download-info">
-                            <h5>{dl.arch}</h5>
+                            <h5>{dl.arch} {dl.recommended && <span className="recommended-badge">Recommended</span>}</h5>
                             <p className="download-size">{dl.size}</p>
                             <p className="download-desc">{dl.desc}</p>
                           </div>
@@ -128,7 +115,7 @@ const Downloads = () => {
                         {version.downloads.map((dl, i) => (
                           <div key={i} className="download-card">
                             <div className="download-info">
-                              <h5>{dl.arch}</h5>
+                              <h5>{dl.arch} {dl.recommended && <span className="recommended-badge">Recommended</span>}</h5>
                               <p className="download-size">{dl.size}</p>
                               <p className="download-desc">{dl.desc}</p>
                             </div>

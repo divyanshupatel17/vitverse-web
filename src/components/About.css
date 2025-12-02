@@ -11,29 +11,11 @@
   padding: 24px;
 }
 
-.about-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 16px;
-}
-
-.about-header h2 {
+.about h2 {
   font-size: 20px;
   font-weight: 500;
   color: var(--text-primary);
-}
-
-.expand-btn {
-  background: transparent;
-  color: var(--text-secondary);
-  padding: 8px;
-  border-radius: 50%;
-  transition: background 0.2s;
-}
-
-.expand-btn:hover {
-  background: var(--bg-secondary);
+  margin-bottom: 16px;
 }
 
 .about-content p {

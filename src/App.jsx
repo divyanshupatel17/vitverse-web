@@ -6,14 +6,12 @@ import About from './components/About'
 import Features from './components/Features'
 import Downloads from './components/Downloads'
 import Contact from './components/Contact'
+import Legal from './components/Legal'
 import Footer from './components/Footer'
 import './App.css'
 
 function App() {
-  const [theme, setTheme] = useState(() => {
-    const savedTheme = localStorage.getItem('theme')
-    return savedTheme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
-  })
+  const [theme, setTheme] = useState('dark')
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)
@@ -22,13 +20,14 @@ function App() {
 
   return (
     <div className="app">
-      <Header theme={theme} setTheme={setTheme} />
+      <Header />
       <Hero />
       <Screenshots />
       <About />
-      <Features />
       <Downloads />
+      <Features />
       <Contact />
+      <Legal />
       <Footer />
     </div>
   )
