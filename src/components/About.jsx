@@ -26,7 +26,7 @@ const About = () => {
               <span className="meta-label">Updated on</span>
               <span className="meta-value">Dec 2, 2024</span>
             </div>
-            <div className="meta-row">
+            <div className="meta-row"  id="download">
               <span className="meta-label">Category</span>
               <span className="meta-value">Education</span>
             </div>

@@ -32,7 +32,7 @@ const Downloads = () => {
   }
 
   return (
-    <section className="downloads section" id="download">
+    <section className="downloads section">
       <div className="downloads-container">
         <h2>Download VITVerse for Android</h2>
         
@@ -131,7 +131,7 @@ const Downloads = () => {
           </div>
         </div>
 
-        <div className="download-note">
+        <div className="download-note"  id="features">
           <p>Try ARM64-v8a first (works on 95% of modern phones). If it doesn't install, use Universal APK.</p>
         </div>
       </div>

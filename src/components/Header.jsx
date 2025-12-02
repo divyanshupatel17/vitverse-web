@@ -5,10 +5,12 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-content">
+        <a href="#">
         <div className="logo-section">
           <img src="/logo.jpg" alt="VITVerse Logo" className="app-logo" />
-          <span className="logo-text">VITVerse</span>
+          <span className="logo-text lora">VIT Verse</span>
         </div>
+        </a>
         <nav className="nav">
           <a href="#features">Features</a>
           <a href="#download">Download</a>
