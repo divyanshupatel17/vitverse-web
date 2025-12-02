@@ -6,7 +6,6 @@ import About from './components/About'
 import Features from './components/Features'
 import Downloads from './components/Downloads'
 import Contact from './components/Contact'
-import Legal from './components/Legal'
 import Footer from './components/Footer'
 import './App.css'
 

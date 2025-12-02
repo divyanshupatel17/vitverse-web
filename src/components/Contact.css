@@ -43,7 +43,9 @@
 }
 
 .contact-icon {
-  font-size: 32px;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
 }
 
 .contact-title {
